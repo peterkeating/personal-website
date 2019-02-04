@@ -10,4 +10,8 @@
     <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-beta3-*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>
