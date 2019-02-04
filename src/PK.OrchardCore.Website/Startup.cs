@@ -8,6 +8,7 @@ namespace PK.OrchardCore.Website
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddOrchardCms();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -16,6 +17,8 @@ namespace PK.OrchardCore.Website
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseOrchardCore();
         }
     }
 }
