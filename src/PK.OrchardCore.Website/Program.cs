@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using OrchardCore.Logging;
 
 namespace PK.OrchardCore.Website
 {
@@ -12,6 +13,7 @@ namespace PK.OrchardCore.Website
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseNLogWeb()
                 .UseStartup<Startup>();
     }
 }
