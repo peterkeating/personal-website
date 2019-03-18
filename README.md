@@ -2,6 +2,10 @@
 
 My [own website](https://peterkeating.co.uk) using [Orchard Core](https://github.com/orchardcms/OrchardCore).
 
+## Status
+
+[![Build Status](https://secure.travis-ci.org/peterkeating/personal-website.png?branch=master)](http://travis-ci.org/peterkeating/personal-website)
+
 ## Prerequisities
 
 ### [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/)
