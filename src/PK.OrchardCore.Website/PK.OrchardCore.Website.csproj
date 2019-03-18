@@ -5,6 +5,12 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <Target Name="DoNotPublishAppData" BeforeTargets="BeforePublish">
+    <ItemGroup>
+      <ResolvedFileToPublish Remove="App_Data\**" />
+    </ItemGroup>
+  </Target>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Moov2.OrchardCore.BlogTheme" Version="0.0.1-beta" />
