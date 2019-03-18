@@ -4,7 +4,7 @@ My [own website](https://peterkeating.co.uk) using [Orchard Core](https://github
 
 ## Status
 
-[![Build Status](https://secure.travis-ci.org/peterkeating/personal-website.png?branch=master)](http://travis-ci.org/peterkeating/personal-website)
+[![Build Status](https://secure.travis-ci.org/peterkeating/personal-website.png?branch=master)](http://travis-ci.org/peterkeating/personal-website) [![Build Status](https://dev.azure.com/petekeating/peterkeating.co.uk/_apis/build/status/peterkeating.personal-website?branchName=master)](https://dev.azure.com/petekeating/peterkeating.co.uk/_build/latest?definitionId=1&branchName=master)
 
 ## Prerequisities
 
