@@ -7,22 +7,24 @@ trigger:
   - master
 
 pool:
-  vmImage: "Ubuntu-16.04"
+  vmImage: "vs2017-win2016"
 
 variables:
   buildConfiguration: "Release"
 
 steps:
   - script: dotnet build --configuration $(buildConfiguration)
-    displayName: "Building project"
+    displayName: "Building"
   - script: dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
-    displayName: "Packaging project"
+    displayName: "Packaging"
   - task: ArchiveFiles@2
+    displayName: "Archiving"
     inputs:
       rootFolderOrFile: "$(Build.ArtifactStagingDirectory)"
       includeRootFolder: false
       archiveFile: "$(Build.ArtifactStagingDirectory)/package/$(Build.BuildId).zip"
       archiveType: "zip"
   - task: PublishBuildArtifacts@1
+    displayName: "Publishing"
     inputs:
       pathtoPublish: "$(Build.ArtifactStagingDirectory)/package"
